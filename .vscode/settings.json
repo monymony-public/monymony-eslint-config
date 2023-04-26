@@ -1,0 +1,44 @@
+{
+  "editor.tabSize": 2,
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true,
+    "source.sortMembers": true,
+  },
+  "typescript.tsdk": "./node_modules/typescript/lib",
+  "files.exclude": {
+    "node_modules": true
+  },
+  "eslint.format.enable": true,
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+  ],
+  "[javascript]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  },
+  "conventionalCommits.scopes": [
+    "package",
+    "assets",
+    "comp",
+    "ios",
+    "android",
+  ],
+  "javascript.preferences.importModuleSpecifier": "non-relative",
+  "typescript.preferences.importModuleSpecifier": "non-relative",
+  "prettier.configPath": ".prettierrc.js",
+  "cSpell.words": [
+    "ondevice",
+    "sbmodern"
+  ],
+}

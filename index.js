@@ -4,7 +4,7 @@ module.exports = {
     'eslint:recommended',
     'prettier', // disables react-specific linting rules that conflict with prettier
   ],
-  plugins: ['import', 'prettier'],
+  plugins: ['import', 'prettier', 'unused-imports'],
   rules: {
     'prettier/prettier': 'warn',
     'padding-line-between-statements': [
@@ -85,10 +85,17 @@ module.exports = {
       },
     ],
     '@typescript-eslint/explicit-module-boundary-types': 'off',
-    '@typescript-eslint/no-unused-vars': 'warn',
+    '@typescript-eslint/no-unused-vars': 'off',
+    "no-unused-vars": "off",
     'no-useless-catch': 'off',
+    "unused-imports/no-unused-imports": "error",
+    "unused-imports/no-unused-vars": [
+			"warn",
+			{ "vars": "all", "varsIgnorePattern": "^_", "args": "after-used", "argsIgnorePattern": "^_" }
+		],
     // import plugins
     'import/no-unresolved': 'error',
+    'import/no-unused-modules': 'error',
     // "import/named": "error",
     'import/namespace': 'error',
     // "import/default": "error",
@@ -96,7 +103,14 @@ module.exports = {
     'import/order': [
       'error',
       {
-        groups: ["builtin", "external", "internal", "parent", "sibling", "index", "object", "type"],
+        groups:[
+          "external", 
+          "builtin", 
+          "internal", 
+          "sibling", 
+          "parent", 
+          "index"
+        ],
         alphabetize: {
           order: 'asc',
         },

@@ -1,4 +1,5 @@
 {
+  // "extends": "@monymony/eslint-config/tsconfig.json",
   "compilerOptions": {
     "target": "es5",
     "lib": [
@@ -18,7 +19,7 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react-jsx"
+    "jsx": "react-jsx",
   },
   "include": [
     "src"
