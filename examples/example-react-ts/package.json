@@ -24,10 +24,12 @@
     "lint": "eslint ."
   },
   "eslintConfig": {
+    "root": true,
     "extends": [
       "react-app",
       "react-app/jest",
-      "@monymony/eslint-config"
+      "@monymony/eslint-config",
+      "@monymony/eslint-config/react"
     ]
   },
   "browserslist": {

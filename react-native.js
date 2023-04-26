@@ -1,11 +1,8 @@
 module.exports = {
-  parser: '@typescript-eslint/parser', // Specifies the ESLint parser
   extends: [
-    '@monymony/eslint-config-ts/lib/defaults',
-    'plugin:react/recommended', // uses react-specific linting rules
-    'plugin:react/jsx-runtime',
+    // 'plugin:react/recommended', // already imported in react
   ],
-  plugins: ['react', 'react-native', 'react-hooks', 'import', 'prettier'],
+  plugins: [],
   rules: {    
     'react/prop-types': 'off',
     // Unnecessary style
