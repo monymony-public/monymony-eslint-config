@@ -93,6 +93,7 @@ module.exports = {
 			"warn",
 			{ "vars": "all", "varsIgnorePattern": "^_", "args": "after-used", "argsIgnorePattern": "^_" }
 		],
+
     // import plugins
     'import/no-unresolved': 'error',
     'import/no-unused-modules': 'error',
@@ -116,6 +117,8 @@ module.exports = {
         },
       },
     ],
+
+    'semi': ["error", "never"],
     'object-curly-spacing': ['error', 'never'],
     'no-nested-ternary': 'warn',
   },
