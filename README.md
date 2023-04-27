@@ -1,3 +1,5 @@
+# Install
+
 # How to use
 
 ```
@@ -28,8 +30,8 @@
 # Local Test
 
 1. Plugin root: `yarn link`
-
 2. In the example project: `yarn link @monymony/eslint-config`
+3. Run `yarn lint`
 
 # Refer
 
