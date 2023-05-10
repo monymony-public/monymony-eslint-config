@@ -1,8 +1,16 @@
 module.exports = {
   extends: [
-    // 'plugin:react/recommended', // already imported in react
+    // apply common rules
+    './index.js',
+    'plugin:react/recommended', // uses react-specific linting rules
+    'plugin:react/jsx-runtime',
   ],
-  plugins: [],
+  plugins: ['react', 'react-native', 'react-hooks'],
+  parserOptions: {
+    ecmaVersion: 2020, // Allows for the parsing of modern ECMAScript features
+    sourceType: 'module', // Allows for the use of imports
+
+  },
   rules: {    
     'react/prop-types': 'off',
     'react/jsx-no-bind': 'off',
