@@ -5,7 +5,7 @@ module.exports = {
     'plugin:react/recommended', // uses react-specific linting rules
     'plugin:react/jsx-runtime',
   ],
-  plugins: ['react', 'react-native', 'react-hooks'],
+  plugins: ['react', 'react-hooks'],
   parserOptions: {
     ecmaVersion: 2020, // Allows for the parsing of modern ECMAScript features
     sourceType: 'module', // Allows for the use of imports
