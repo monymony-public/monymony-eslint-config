@@ -5,6 +5,7 @@ module.exports = {
     'prettier', // disables react-specific linting rules that conflict with prettier
   ],
   plugins: ['import', 'prettier', 'unused-imports'],
+  ignorePatterns: ['.eslintrc.js', 'node_modules/'],
   overrides: [
     {
       files: ['*.ts', '*.tsx'],
@@ -73,16 +74,16 @@ module.exports = {
         prev: ['const', 'let', 'var', 'export'],
         next: ['const', 'let', 'var', 'export'],
       },
-      {
-        blankLine: 'always',
-        prev: ['multiline-const', 'multiline-expression', 'multiline-let'],
-        next: '*',
-      },
-      {
-        blankLine: 'always',
-        prev: '*',
-        next: ['multiline-const', 'multiline-expression', 'multiline-let'],
-      },
+      // {
+      //   blankLine: 'always',
+      //   prev: ['multiline-const', 'multiline-expression', 'multiline-let'],
+      //   next: '*',
+      // },
+      // {
+      //   blankLine: 'always',
+      //   prev: '*',
+      //   next: ['multiline-const', 'multiline-expression', 'multiline-let'],
+      // },
       // Always require blank lines before and after class declaration, if, do/while, switch, try
       {
         blankLine: 'always',
@@ -122,6 +123,7 @@ module.exports = {
     'semi': ["error", "never"],
     'object-curly-spacing': ['error', 'never'],
     'no-nested-ternary': 'warn',
+    'multiline-comment-style': 'warn',
   },
   settings: {
     'import/resolver': {
