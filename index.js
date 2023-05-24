@@ -124,6 +124,7 @@ module.exports = {
     'object-curly-spacing': ['error', 'never'],
     'no-nested-ternary': 'warn',
     'multiline-comment-style': 'warn',
+    "spaced-comment": ["warn", "always", { "exceptions": ["-", "+"] }]
   },
   settings: {
     'import/resolver': {
