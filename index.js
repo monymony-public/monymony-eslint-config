@@ -134,6 +134,8 @@ module.exports = {
     "spaced-comment": ["warn", "always", { "exceptions": ["-", "+"] }],
     'no-console': 'warn',
     'default-param-last': 'warn',
+    "curly": ['warn', "all"],
+    'prefer-arrow-callback': 'warn',
   },
   settings: {
     'import/resolver': {
