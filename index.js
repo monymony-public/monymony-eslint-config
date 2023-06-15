@@ -12,6 +12,13 @@ module.exports = {
       parser: '@typescript-eslint/parser',
       plugins: ['@typescript-eslint/eslint-plugin'],
       rules: {
+        "@typescript-eslint/consistent-type-imports": [
+          "warn", 
+          {
+            prefer: "type-imports",
+            fixStyle: "inline-type-imports"
+          }
+        ],
         '@typescript-eslint/no-empty-function': 'off',
         '@typescript-eslint/ban-ts-ignore': 'off',
         '@typescript-eslint/indent': 'off',
