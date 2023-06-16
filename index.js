@@ -12,6 +12,14 @@ module.exports = {
       parser: '@typescript-eslint/parser',
       plugins: ['@typescript-eslint/eslint-plugin'],
       rules: {
+        "@typescript-eslint/consistent-type-imports": [
+          "warn", 
+          {
+            prefer: "type-imports",
+            fixStyle: "inline-type-imports"
+          }
+        ],
+        "@typescript-eslint/no-floating-promises": 'warn',
         '@typescript-eslint/no-empty-function': 'off',
         '@typescript-eslint/ban-ts-ignore': 'off',
         '@typescript-eslint/indent': 'off',
@@ -43,7 +51,14 @@ module.exports = {
           },
         ],
         '@typescript-eslint/explicit-module-boundary-types': 'off',
-        '@typescript-eslint/no-unused-vars': 'warn',
+        '@typescript-eslint/no-unused-vars': [
+          'warn',
+          {
+            varsIgnorePattern: '^_',
+            argsIgnorePattern: '^_',
+            ignoreRestSiblings: true,
+          },
+        ],
       }
     }
   ],
@@ -124,7 +139,11 @@ module.exports = {
     'object-curly-spacing': ['error', 'never'],
     'no-nested-ternary': 'warn',
     'multiline-comment-style': 'warn',
-    "spaced-comment": ["warn", "always", { "exceptions": ["-", "+"] }]
+    "spaced-comment": ["warn", "always", { "exceptions": ["-", "+"] }],
+    'no-console': 'warn',
+    'default-param-last': 'warn',
+    "curly": ['warn', "all"],
+    'prefer-arrow-callback': 'warn',
   },
   settings: {
     'import/resolver': {

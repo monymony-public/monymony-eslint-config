@@ -11,6 +11,12 @@ module.exports = {
     sourceType: 'module', // Allows for the use of imports
   },
   rules: {
+    '@typescript-eslint/explicit-function-return-type': [
+      'warning',
+      {
+        allowExpressions: true,
+      },
+    ],
     'react/prop-types': 'off',
     // Unnecessary style
     'react-native/no-unused-styles': 1,
