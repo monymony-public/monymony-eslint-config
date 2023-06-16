@@ -19,6 +19,7 @@ module.exports = {
             fixStyle: "inline-type-imports"
           }
         ],
+        "@typescript-eslint/no-floating-promises": 'warn',
         '@typescript-eslint/no-empty-function': 'off',
         '@typescript-eslint/ban-ts-ignore': 'off',
         '@typescript-eslint/indent': 'off',
