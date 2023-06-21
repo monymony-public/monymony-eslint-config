@@ -1,0 +1,32 @@
+# 1. Make release PR from main branch
+# 2. Publish if release is created by release-please
+# https://github.com/google-github-actions/release-please-action
+
+name: release-please
+
+on:
+  push:
+    branches:
+      - release
+
+permissions:
+  contents: write
+  pull-requests: write
+      
+
+jobs:
+  release-please:
+    runs-on: ubuntu-latest
+    outputs:
+      released: ${{ steps.release.outputs.release_created }}
+    steps:
+      - id: release
+        uses: google-github-actions/release-please-action@v3
+        with:
+          release-type: node
+          package-name: release-please-action
+          changelog-types: '[{"type":"feat","section":"Features","hidden":false},{"type":"fix","section":"Bug Fixes","hidden":false},{"type":"chore","section":"Chore","hidden":false}, {"type":"build","section":"Builds","hidden":false}, {"type":"docs", "section":"Docs", "hidden":false}, {"type":"style", "section":"Coding Style", "hidden":false}, {"type":"refactor", "section":"Refactor", "hidden":false}, {"type":"perf", "section":"Performance", "hidden":false}, {"type":"test","section":"Test Code","hidden":false}]'
+
+      # The logic below handles the npm publication:
+      - name: release created
+        run: echo "release created:" ${{ steps.release.outputs.release_created }}
