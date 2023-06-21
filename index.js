@@ -138,7 +138,6 @@ module.exports = {
     'semi': ["error", "never"],
     'object-curly-spacing': ['error', 'never'],
     'no-nested-ternary': 'warn',
-    'multiline-comment-style': 'warn',
     "spaced-comment": ["warn", "always", { "exceptions": ["-", "+"] }],
     'no-console': 'warn',
     'default-param-last': 'warn',
