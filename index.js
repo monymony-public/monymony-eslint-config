@@ -143,6 +143,7 @@ module.exports = {
     'default-param-last': 'warn',
     "curly": ['warn', "all"],
     'prefer-arrow-callback': 'warn',
+    'max-len': ["error", { "code": 120, "tabWidth": 2 }],
   },
   settings: {
     'import/resolver': {
