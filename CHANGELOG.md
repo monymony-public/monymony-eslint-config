@@ -1,5 +1,22 @@
 # Changelog
 
+## [0.3.0](https://github.com/monymony-public/monymony-eslint-config/compare/v0.2.0...v0.3.0) (2023-06-22)
+
+
+### Features
+
+* update max-len to 120 ([71cabb3](https://github.com/monymony-public/monymony-eslint-config/commit/71cabb34e1ddabc0fe5c251a226cafc3206372a8))
+
+
+### Bug Fixes
+
+* remove prefix checking for interface ([dbb5c1c](https://github.com/monymony-public/monymony-eslint-config/commit/dbb5c1cac0512441dc2fdd03a3729fbf8db34750))
+
+
+### Builds
+
+* **npm:** update publish settings ([71d0bf3](https://github.com/monymony-public/monymony-eslint-config/commit/71d0bf3a24a31fa3cdb91a17f9b5457f6bea5910))
+
 ## [0.2.0](https://github.com/monymony-public/monymony-eslint-config/compare/v0.1.1...v0.2.0) (2023-06-21)
 
 
