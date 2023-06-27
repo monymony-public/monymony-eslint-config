@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.3.1](https://github.com/monymony-public/monymony-eslint-config/compare/v0.3.0...v0.3.1) (2023-06-27)
+
+
+### Refactor
+
+* update max-len to ignoreStrings to true ([36fa832](https://github.com/monymony-public/monymony-eslint-config/commit/36fa83290ad5863b75a88e4a68fe7ccbc1208075))
+
 ## [0.3.0](https://github.com/monymony-public/monymony-eslint-config/compare/v0.2.0...v0.3.0) (2023-06-22)
 
 
