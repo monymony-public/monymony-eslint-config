@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.3.3](https://github.com/monymony-public/monymony-eslint-config/compare/v0.3.2...v0.3.3) (2023-06-28)
+
+
+### Bug Fixes
+
+* **prettier:** update printWidth to 120 for fititng eslint max-len ([f662938](https://github.com/monymony-public/monymony-eslint-config/commit/f66293896035b1e64b77a3e40c24988afcc9e425))
+
 ## [0.3.2](https://github.com/monymony-public/monymony-eslint-config/compare/v0.3.1...v0.3.2) (2023-06-28)
 
 
