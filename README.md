@@ -4,11 +4,14 @@ Do not use it. Not finished yet.
 
 # How to use
 
+- Remove your prettier config or set as [Prettier config](./.prettierrc.js).
+
+- Set your eslint config.
 ```
 "extends": [
   ...,
-  "@monymony/eslint-config",
-  "@monymony/eslint-config/backend"
+  "@monymony/eslint-config", // should be set.
+  "@monymony/eslint-config/backend" // optional for environment.
 ]
 ```
 
@@ -29,6 +32,9 @@ Do not use it. Not finished yet.
   "@monymony/eslint-config/backend"
 ]
 ```
+
+
+
 # Local Test
 
 1. Plugin root: `yarn link`
