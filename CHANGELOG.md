@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.3.2](https://github.com/monymony-public/monymony-eslint-config/compare/v0.3.1...v0.3.2) (2023-06-28)
+
+
+### Bug Fixes
+
+* add parserOptions.project:tsconfig.json ([b179b05](https://github.com/monymony-public/monymony-eslint-config/commit/b179b05a6234fe6d0f3c2793e8eefdfe1c69273f))
+
 ## [0.3.1](https://github.com/monymony-public/monymony-eslint-config/compare/v0.3.0...v0.3.1) (2023-06-27)
 
 
