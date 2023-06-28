@@ -10,7 +10,10 @@ module.exports = {
     {
       files: ['*.ts', '*.tsx'],
       parser: '@typescript-eslint/parser',
-      plugins: ['@typescript-eslint/eslint-plugin'],
+      parserOptions: {
+        project: ['./tsconfig.json'],
+      },
+      plugins: ['@typescript-eslint/eslint-plugin'],      
       rules: {
         "@typescript-eslint/consistent-type-imports": [
           "warn", 
@@ -143,7 +146,7 @@ module.exports = {
     'default-param-last': 'warn',
     "curly": ['warn', "all"],
     'prefer-arrow-callback': 'warn',
-    'max-len': ["error", { "code": 120, "tabWidth": 2, "ignoreStrings": true }],
+    'max-len': ["error", { "code": 120, "tabWidth": 2, "ignoreStrings": true, "ignoreTemplateLiterals": true }],
   },
   settings: {
     'import/resolver': {
