@@ -147,6 +147,7 @@ module.exports = {
     "curly": ['warn', "all"],
     'prefer-arrow-callback': 'warn',
     'max-len': ["error", { "code": 120, "tabWidth": 2, "ignoreStrings": true, "ignoreTemplateLiterals": true }],
+    'max-params': ["error", 3]
   },
   settings: {
     'import/resolver': {
