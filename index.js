@@ -146,9 +146,19 @@ module.exports = {
     'default-param-last': 'warn',
     curly: ['warn', 'all'],
     'prefer-arrow-callback': 'warn',
+    // specify the maximum length of a line in your program
+    // https://eslint.org/docs/rules/max-len
     'max-len': [
       'error',
-      {code: 120, tabWidth: 2, ignoreStrings: true, ignoreTemplateLiterals: true, ignoreComments: true},
+      {
+        code: 100, 
+        tabWidth: 2, 
+        ignoreUrls: true,
+        ignoreComments: false,
+        ignoreRegExpLiterals: true,
+        ignoreStrings: true,
+        ignoreTemplateLiterals: true,
+      },
     ],
     'max-params': ['error', 3],
   },
