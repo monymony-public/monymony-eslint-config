@@ -1,5 +1,18 @@
 # Changelog
 
+## [0.3.5](https://github.com/monymony-public/monymony-eslint-config/compare/v0.3.4...v0.3.5) (2023-07-04)
+
+
+### Bug Fixes
+
+* **lint:** add `max-params` to 3 ([0cd28fc](https://github.com/monymony-public/monymony-eslint-config/commit/0cd28fc00cd2d4d9a337b2d1a834833d14f446b1))
+* **rn:** correct warning to warn ([298cc74](https://github.com/monymony-public/monymony-eslint-config/commit/298cc747eb8b9520dd811894b4f423507867452e))
+
+
+### Refactor
+
+* **lint:** ignore comment for max-len ([884d24f](https://github.com/monymony-public/monymony-eslint-config/commit/884d24f7facd48a89528ed4a351edcca1b57bf86))
+
 ## [0.3.4](https://github.com/monymony-public/monymony-eslint-config/compare/v0.3.3...v0.3.4) (2023-07-03)
 
 
