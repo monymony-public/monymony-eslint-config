@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.3.6](https://github.com/monymony-public/monymony-eslint-config/compare/v0.3.5...v0.3.6) (2023-07-04)
+
+
+### Refactor
+
+* **lint:** update max-len to 100 ([2d0c234](https://github.com/monymony-public/monymony-eslint-config/commit/2d0c234f21f11040bc61cb52a9227bbe04d4883f))
+
 ## [0.3.5](https://github.com/monymony-public/monymony-eslint-config/compare/v0.3.4...v0.3.5) (2023-07-04)
 
 
