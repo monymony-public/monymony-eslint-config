@@ -1,4 +1,4 @@
-module.exports = {  
+module.exports = {
   extends: [
     'eslint:recommended',
     'plugin:@typescript-eslint/recommended', // uses typescript-specific linting rules
@@ -13,16 +13,16 @@ module.exports = {
       parserOptions: {
         project: ['./tsconfig.json'],
       },
-      plugins: ['@typescript-eslint/eslint-plugin'],      
+      plugins: ['@typescript-eslint/eslint-plugin'],
       rules: {
-        "@typescript-eslint/consistent-type-imports": [
-          "warn", 
+        '@typescript-eslint/consistent-type-imports': [
+          'warn',
           {
-            prefer: "type-imports",
-            fixStyle: "inline-type-imports"
-          }
+            prefer: 'type-imports',
+            fixStyle: 'inline-type-imports',
+          },
         ],
-        "@typescript-eslint/no-floating-promises": 'warn',
+        '@typescript-eslint/no-floating-promises': 'warn',
         '@typescript-eslint/no-empty-function': 'off',
         '@typescript-eslint/ban-ts-ignore': 'off',
         '@typescript-eslint/indent': 'off',
@@ -62,8 +62,8 @@ module.exports = {
             ignoreRestSiblings: true,
           },
         ],
-      }
-    }
+      },
+    },
   ],
   rules: {
     'prettier/prettier': 'warn',
@@ -116,11 +116,11 @@ module.exports = {
     ],
 
     'no-useless-catch': 'off',
-    "unused-imports/no-unused-imports": "error",
-    "unused-imports/no-unused-vars": [
-			"warn",
-			{ "vars": "all", "varsIgnorePattern": "^_", "args": "after-used", "argsIgnorePattern": "^_" }
-		],
+    'unused-imports/no-unused-imports': 'error',
+    'unused-imports/no-unused-vars': [
+      'warn',
+      {vars: 'all', varsIgnorePattern: '^_', args: 'after-used', argsIgnorePattern: '^_'},
+    ],
 
     // import plugins
     'import/no-unresolved': 'error',
@@ -138,16 +138,19 @@ module.exports = {
         },
       },
     ],
-    'semi': ["error", "never"],
+    semi: ['error', 'never'],
     'object-curly-spacing': ['error', 'never'],
     'no-nested-ternary': 'warn',
-    "spaced-comment": ["warn", "always", { "exceptions": ["-", "+"] }],
+    'spaced-comment': ['warn', 'always', {exceptions: ['-', '+']}],
     'no-console': 'warn',
     'default-param-last': 'warn',
-    "curly": ['warn', "all"],
+    curly: ['warn', 'all'],
     'prefer-arrow-callback': 'warn',
-    'max-len': ["error", { "code": 120, "tabWidth": 2, "ignoreStrings": true, "ignoreTemplateLiterals": true }],
-    'max-params': ["error", 3]
+    'max-len': [
+      'error',
+      {code: 120, tabWidth: 2, ignoreStrings: true, ignoreTemplateLiterals: true, ignoreComments: true},
+    ],
+    'max-params': ['error', 3],
   },
   settings: {
     'import/resolver': {
