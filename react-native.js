@@ -12,7 +12,7 @@ module.exports = {
   },
   rules: {
     '@typescript-eslint/explicit-function-return-type': [
-      'warning',
+      'warn',
       {
         allowExpressions: true,
       },
