@@ -30,6 +30,7 @@ module.exports = {
     'react/require-optimization': 2,
     'react-hooks/rules-of-hooks': 'error', // Checks rules of Hooks
     'react-hooks/exhaustive-deps': 'warn', // Checks effect
+    'max-params': ['error', 3],
   },
   settings: {
     react: {

@@ -20,6 +20,7 @@ module.exports = {
     'react-hooks/exhaustive-deps': 'warn', // Checks effect
     "react/jsx-uses-react": "off",
     "react/react-in-jsx-scope": "off",
+    'max-params': ['error', 3],
   },
   settings: {
     react: {

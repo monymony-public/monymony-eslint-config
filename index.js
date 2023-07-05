@@ -154,13 +154,12 @@ module.exports = {
         code: 100, 
         tabWidth: 2, 
         ignoreUrls: true,
-        ignoreComments: false,
+        ignoreComments: true,
         ignoreRegExpLiterals: true,
         ignoreStrings: true,
         ignoreTemplateLiterals: true,
       },
-    ],
-    'max-params': ['error', 3],
+    ],    
   },
   settings: {
     'import/resolver': {
