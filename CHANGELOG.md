@@ -1,5 +1,17 @@
 # Changelog
 
+## [0.3.7](https://github.com/monymony-public/monymony-eslint-config/compare/v0.3.6...v0.3.7) (2023-07-05)
+
+
+### Refactor
+
+* **lint:** apply the max-params rule to FE ([578f61b](https://github.com/monymony-public/monymony-eslint-config/commit/578f61bd6430ed2bc0e9d7ed88905d08517e448d))
+
+
+### Chore
+
+* **example:** update examples ([aac1773](https://github.com/monymony-public/monymony-eslint-config/commit/aac177379ea6f6acf61d25b37a079baece865911))
+
 ## [0.3.6](https://github.com/monymony-public/monymony-eslint-config/compare/v0.3.5...v0.3.6) (2023-07-04)
 
 
