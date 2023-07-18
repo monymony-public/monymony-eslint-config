@@ -31,6 +31,10 @@ module.exports = {
     'react-hooks/rules-of-hooks': 'error', // Checks rules of Hooks
     'react-hooks/exhaustive-deps': 'warn', // Checks effect
     'max-params': ['error', 3],
+    "react/self-closing-comp": ["warn", {
+      "component": true,
+      "html": true
+    }]
   },
   settings: {
     react: {

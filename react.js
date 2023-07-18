@@ -21,6 +21,10 @@ module.exports = {
     "react/jsx-uses-react": "off",
     "react/react-in-jsx-scope": "off",
     'max-params': ['error', 3],
+    "react/self-closing-comp": ["warn", {
+      "component": true,
+      "html": true
+    }]
   },
   settings: {
     react: {
