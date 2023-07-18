@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.4.0](https://github.com/monymony-public/monymony-eslint-config/compare/v0.3.7...v0.4.0) (2023-07-18)
+
+
+### Features
+
+* **fe:** add self closing tag rule ([#14](https://github.com/monymony-public/monymony-eslint-config/issues/14)) ([ff85e6e](https://github.com/monymony-public/monymony-eslint-config/commit/ff85e6e30e3214e54cf5387eb409da7090eb27ca))
+
 ## [0.3.7](https://github.com/monymony-public/monymony-eslint-config/compare/v0.3.6...v0.3.7) (2023-07-05)
 
 
