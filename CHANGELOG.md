@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.4.1](https://github.com/monymony-public/monymony-eslint-config/compare/v0.4.0...v0.4.1) (2023-09-01)
+
+
+### Bug Fixes
+
+* **rule:** add no-return-await: off ([8da0467](https://github.com/monymony-public/monymony-eslint-config/commit/8da04675458868ee72e14f6be3b513183d9ca772))
+
 ## [0.4.0](https://github.com/monymony-public/monymony-eslint-config/compare/v0.3.7...v0.4.0) (2023-07-18)
 
 
