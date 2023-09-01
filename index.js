@@ -62,6 +62,7 @@ module.exports = {
             ignoreRestSiblings: true,
           },
         ],
+        'no-return-await': 'off', // for call stack. @link https://jojoldu.tistory.com/699
       },
     },
   ],
