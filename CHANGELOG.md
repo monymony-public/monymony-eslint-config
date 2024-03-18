@@ -1,5 +1,22 @@
 # Changelog
 
+## [0.5.0](https://github.com/monymony-public/monymony-eslint-config/compare/v0.4.1...v0.5.0) (2024-03-18)
+
+
+### Features
+
+* **package:** bump up typescript eslint modules ([#19](https://github.com/monymony-public/monymony-eslint-config/issues/19)) ([f967477](https://github.com/monymony-public/monymony-eslint-config/commit/f9674779477f885b0f8e11b58b61f140b52341ef))
+
+
+### Chore
+
+* dependency update to latest(2023-11-16) ([#18](https://github.com/monymony-public/monymony-eslint-config/issues/18)) ([ac50d6a](https://github.com/monymony-public/monymony-eslint-config/commit/ac50d6a1392ce0770742cbd58714ca687033cf40))
+
+
+### Builds
+
+* rename npmrc only for github action ([#17](https://github.com/monymony-public/monymony-eslint-config/issues/17)) ([b0447aa](https://github.com/monymony-public/monymony-eslint-config/commit/b0447aa6ea4a046ec010952adfa1f480b2251cf5))
+
 ## [0.4.1](https://github.com/monymony-public/monymony-eslint-config/compare/v0.4.0...v0.4.1) (2023-09-01)
 
 
