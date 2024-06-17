@@ -33,6 +33,16 @@ Do not use it. Not finished yet.
 ]
 ```
 
+React Native
+```
+"extends": [
+  "react-app",
+  "react-app/jest",
+  "@monymony/eslint-config",
+  "@monymony/eslint-config/react-native"
+]
+```
+
 
 
 # Local Test
