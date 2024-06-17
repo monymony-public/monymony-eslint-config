@@ -5,6 +5,7 @@ Do not use it. Not finished yet.
 # How to use
 
 - Remove your prettier config or set as [Prettier config](./.prettierrc.js).
+- Install this package. `yarn add -D @monymony/eslint-config`
 
 - Set your eslint config.
 ```
