@@ -16,7 +16,9 @@ Do not use it. Not finished yet.
 ]
 ```
 
-# Example eslint config. 
+# Examples. 
+
+React
 ```
 "extends": [
   "react-app",
@@ -26,6 +28,7 @@ Do not use it. Not finished yet.
 ]
 ```
 
+Backend
 ```
 "extends": [
   ...,
