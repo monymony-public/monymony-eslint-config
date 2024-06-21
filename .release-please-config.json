@@ -1,0 +1,50 @@
+{
+  "release-type": "node",
+  "changelog-sections": [
+    {
+      "type": "feat",
+      "section": "Features",
+      "hidden": false
+    },
+    {
+      "type": "fix",
+      "section": "Bug Fixes",
+      "hidden": false
+    },
+    {
+      "type": "chore",
+      "section": "Chore",
+      "hidden": false
+    },
+    {
+      "type": "build",
+      "section": "Builds",
+      "hidden": false
+    },
+    {
+      "type": "docs",
+      "section": "Docs",
+      "hidden": false
+    },
+    {
+      "type": "style",
+      "section": "Coding Style",
+      "hidden": false
+    },
+    {
+      "type": "refactor",
+      "section": "Refactor",
+      "hidden": false
+    },
+    {
+      "type": "perf",
+      "section": "Performance",
+      "hidden": false
+    },
+    {
+      "type": "test",
+      "section": "Test Code",
+      "hidden": false
+    }
+  ]
+}
