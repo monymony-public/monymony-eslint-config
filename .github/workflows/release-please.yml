@@ -20,10 +20,16 @@ jobs:
       released: ${{ steps.release.outputs.release_created }}
     steps:
       - id: release
-        uses: google-github-actions/release-please-action@v4
+        uses: googleapis/release-please-action@v4
         with:
-          release-type: node
-          config-file: .release-please-config.json
+          skip-github-release: false
+          skip-github-pull-request: false
+          # this assumes that you have created a personal access token
+          # (PAT) and configured it as a GitHub action secret named
+          # `MY_RELEASE_PLEASE_TOKEN` (this secret name is not important).
+          token: ${{ secrets.RELEASE_PLEASE_TOKEN }}
+          config-file: release-please-config.json
+          manifest-file: .release-please-manifest.json
 
       - name: release created
         run: echo "release created:" ${{ steps.release.outputs.release_created }}
