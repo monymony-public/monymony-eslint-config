@@ -1,8 +1,8 @@
 {
   "editor.tabSize": 2,
   "editor.codeActionsOnSave": {
-    "source.fixAll": true,
-    "source.sortMembers": true,
+    "source.fixAll": "explicit",
+    "source.sortMembers": "explicit"
   },
   "typescript.tsdk": "./node_modules/typescript/lib",
   "files.exclude": {
@@ -38,6 +38,7 @@
   "typescript.preferences.importModuleSpecifier": "non-relative",
   "prettier.configPath": ".prettierrc.js",
   "cSpell.words": [
+    "monymony",
     "ondevice",
     "sbmodern"
   ],
