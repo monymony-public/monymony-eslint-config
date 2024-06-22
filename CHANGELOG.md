@@ -1,5 +1,41 @@
 # Changelog
 
+## [0.5.1](https://github.com/monymony-public/monymony-eslint-config/compare/v0.5.0...v0.5.1) (2024-06-22)
+
+
+### Bug Fixes
+
+* **GitHub:** update release-please action ([f2e056d](https://github.com/monymony-public/monymony-eslint-config/commit/f2e056d739b2030c98b14aec2efc5cd5e52c56d8))
+
+
+### Chore
+
+* **deps:** dependency update 2024-06-21 ([#21](https://github.com/monymony-public/monymony-eslint-config/issues/21)) ([aad16ba](https://github.com/monymony-public/monymony-eslint-config/commit/aad16ba452883421a1e4eb6407505da500c380df))
+
+
+### Builds
+
+* **GitHub:** update release-please action ([826ed17](https://github.com/monymony-public/monymony-eslint-config/commit/826ed17b04f004952332fe15e62a3951706f9b68))
+* **GitHub:** update release-please action ([38d3eae](https://github.com/monymony-public/monymony-eslint-config/commit/38d3eaed87206730d5bd7ece7d0efecdb6549591))
+* **GitHub:** update release-please action ([f2e056d](https://github.com/monymony-public/monymony-eslint-config/commit/f2e056d739b2030c98b14aec2efc5cd5e52c56d8))
+* **GitHub:** update release-please action ([f2e056d](https://github.com/monymony-public/monymony-eslint-config/commit/f2e056d739b2030c98b14aec2efc5cd5e52c56d8))
+* **GitHub:** update release-please action ([f2e056d](https://github.com/monymony-public/monymony-eslint-config/commit/f2e056d739b2030c98b14aec2efc5cd5e52c56d8))
+* **GitHub:** update release-please action ([f2e056d](https://github.com/monymony-public/monymony-eslint-config/commit/f2e056d739b2030c98b14aec2efc5cd5e52c56d8))
+* **GitHub:** update release-please action ([f2e056d](https://github.com/monymony-public/monymony-eslint-config/commit/f2e056d739b2030c98b14aec2efc5cd5e52c56d8))
+* **GitHub:** update release-please action ([f2e056d](https://github.com/monymony-public/monymony-eslint-config/commit/f2e056d739b2030c98b14aec2efc5cd5e52c56d8))
+* **GitHub:** update release-please action ([f2e056d](https://github.com/monymony-public/monymony-eslint-config/commit/f2e056d739b2030c98b14aec2efc5cd5e52c56d8))
+* **GitHub:** update release-please action ([f2e056d](https://github.com/monymony-public/monymony-eslint-config/commit/f2e056d739b2030c98b14aec2efc5cd5e52c56d8))
+* **GitHub:** update release-please action ([f2e056d](https://github.com/monymony-public/monymony-eslint-config/commit/f2e056d739b2030c98b14aec2efc5cd5e52c56d8))
+* **GitHub:** update release-please action ([f2e056d](https://github.com/monymony-public/monymony-eslint-config/commit/f2e056d739b2030c98b14aec2efc5cd5e52c56d8))
+* **GitHub:** update release-please action ([f2e056d](https://github.com/monymony-public/monymony-eslint-config/commit/f2e056d739b2030c98b14aec2efc5cd5e52c56d8))
+* **GitHub:** update release-please action ([f2e056d](https://github.com/monymony-public/monymony-eslint-config/commit/f2e056d739b2030c98b14aec2efc5cd5e52c56d8))
+* **GitHub:** update release-please action ([2e73e90](https://github.com/monymony-public/monymony-eslint-config/commit/2e73e90e203266d489d606607d5475b90e0be223))
+
+
+### Docs
+
+* update README ([07d8624](https://github.com/monymony-public/monymony-eslint-config/commit/07d8624717e3c085a5727b439aee96594e258fb7))
+
 ## [0.5.0](https://github.com/monymony-public/monymony-eslint-config/compare/v0.4.1...v0.5.0) (2024-03-18)
 
 
