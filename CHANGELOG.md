@@ -1,5 +1,17 @@
 # Changelog
 
+## [0.5.3](https://github.com/monymony-public/monymony-eslint-config/compare/v0.5.2...v0.5.3) (2024-06-22)
+
+
+### Builds
+
+* **GitHub:** update release-please action ([cb0d471](https://github.com/monymony-public/monymony-eslint-config/commit/cb0d47111b70e11a6222331c37ac532b6714f037))
+
+
+### Docs
+
+* update README ([8ca7ba1](https://github.com/monymony-public/monymony-eslint-config/commit/8ca7ba1abed986f55d09c47a42e4386120205d8f))
+
 ## [0.5.2](https://github.com/monymony-public/monymony-eslint-config/compare/v0.5.1...v0.5.2) (2024-06-22)
 
 
