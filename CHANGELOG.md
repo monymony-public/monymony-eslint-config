@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.5.4](https://github.com/monymony-public/monymony-eslint-config/compare/v0.5.3...v0.5.4) (2024-06-22)
+
+
+### Builds
+
+* **GitHub:** enable npm publish to release-please ([cd756b2](https://github.com/monymony-public/monymony-eslint-config/commit/cd756b29faf75b36970e43ac751593e6a5db743f))
+
 ## [0.5.3](https://github.com/monymony-public/monymony-eslint-config/compare/v0.5.2...v0.5.3) (2024-06-22)
 
 
