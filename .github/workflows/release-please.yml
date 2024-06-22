@@ -22,8 +22,6 @@ jobs:
       - id: release
         uses: googleapis/release-please-action@v4
         with:
-          skip-github-release: false
-          skip-github-pull-request: false
           # this assumes that you have created a personal access token
           # (PAT) and configured it as a GitHub action secret named
           # `MY_RELEASE_PLEASE_TOKEN` (this secret name is not important).
