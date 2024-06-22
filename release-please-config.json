@@ -1,13 +1,14 @@
 {
   "$schema": "https://raw.githubusercontent.com/googleapis/release-please/main/schemas/config.json",
   "release-type": "node",
+  "include-component-in-tag": false,
   "packages": {
     ".": {
       "release-type": "node"
     }
   },
   "group-pull-request-title-pattern": "chore(release): release ${version}",
-  "pull-request-title-pattern": "chore(release): release${component} ${version}",
+  "pull-request-title-pattern": "chore(release): release ${version}",
   "changelog-sections": [
     {
       "type": "feat",
