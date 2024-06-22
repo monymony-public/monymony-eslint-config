@@ -32,3 +32,25 @@ jobs:
 
       - name: release created
         run: echo "release created:" ${{ steps.release.outputs.release_created }}
+
+        # The logic below handles the npm publication:
+      - name: Set up Node.js
+        if: ${{ steps.release.outputs.release_created }}
+        uses: actions/checkout@v4
+        # these if statements ensure that a publication only occurs when
+        # a new release is created:
+      - name: Create .npmrc
+        if: ${{ steps.release.outputs.release_created }}
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          registry-url: 'https://registry.npmjs.org'
+      - if: ${{ steps.release.outputs.release_created }}
+        run: mv .npmrc.forgithubaction .npmrc
+      - if: ${{ steps.release.outputs.release_created }}
+        run: npm ci        
+      - name: Publish to npm
+        if: ${{ steps.release.outputs.release_created }}
+        run: npm publish
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
