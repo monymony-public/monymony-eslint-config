@@ -53,6 +53,11 @@ React Native
 2. In the example project: `yarn link @monymony/eslint-config`
 3. Run `yarn lint`
 
+# Publish
+
+- Bump version PR will be created when we push to `release` branch.
+- Tagging and publishing to npm will be triggered by pushing `main` branch. 
+
 # Refer
 
 Multiple configs: https://github.com/AlloyTeam/eslint-config-alloy
