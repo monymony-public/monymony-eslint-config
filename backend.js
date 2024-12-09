@@ -1,9 +1,24 @@
-module.exports = {
-  extends: [
-    './shared.js', // uses typescript-specific linting rules
-  ],
-  parserOptions: {
-    ecmaVersion: 2020, // Allows for the parsing of modern ECMAScript features
-    sourceType: 'module', // Allows for the use of imports
-  },
-}
+import path from "node:path";
+import { fileURLToPath } from "node:url";
+import js from "@eslint/js";
+import { FlatCompat } from "@eslint/eslintrc";
+
+// To Support ESM module and CommonJS module
+const __filename = typeof __filename !== "undefined"
+  ? __filename
+  : fileURLToPath(import.meta.url);
+
+const __dirname = path.dirname(__filename);
+
+const compat = new FlatCompat({
+    baseDirectory: __dirname,
+    recommendedConfig: js.configs.recommended,
+    allConfig: js.configs.all
+});
+
+export default [...compat.extends("./common.js"), {
+    languageOptions: {
+        ecmaVersion: 2020,
+        sourceType: "module",
+    },
+}];

@@ -4,42 +4,53 @@
   "description": "",
   "license": "ISC",
   "author": "monymony",
+  "type": "module",
+  "main": "./dist/common.cjs.js",
+  "module": "./dist/common.esm.js",
   "exports": {
-    ".": {
-      "require": "./shared.js", 
-      "import": "./shared.js" 
-    },
-    "./react": {
-      "require": "./react.js",
-      "import": "./react.js"
-    },
-    "./react-native": {
-      "require": "./react-native.js",
-      "import": "./react-native.js"
+    "./common": {
+      "require": "./dist/common/common.cjs.js",
+      "import": "./dist/common/common.esm.js"
     },
     "./backend": {
-      "require": "./backend.js",
-      "import": "./backend.js"
+      "require": "./dist/backend/backend.cjs.js",
+      "import": "./dist/backend/backend.esm.js"
+    },
+    "./react": {
+      "require": "./dist/react/react.cjs.js",
+      "import": "./dist/react/react.esm.js"
+    },
+    "./react-native": {
+      "require": "./dist/react-native/react-native.cjs.js",
+      "import": "./dist/react-native/react-native.esm.js"
     }
   },
   "packageManager": "yarn@1.22.22",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rollup -c rollup.config.js"
   },
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "^7.13.1",
     "@typescript-eslint/parser": "^7.13.1",
     "eslint": "^9.16.0",
     "eslint-config-prettier": "^9.1.0",
-    "eslint-plugin-import": "^2.29.1",
     "eslint-plugin-prettier": "^5.1.3",
     "eslint-plugin-react": "^7.34.3",
     "eslint-plugin-react-hooks": "^4.6.2",
     "eslint-plugin-react-native": "^4.1.0",
     "eslint-plugin-unused-imports": "^4.0.0",
-    "prettier": "^3.3.2"
+    "prettier": "^3.3.2",
+    "rollup": "^4.28.1"
   },
   "devDependencies": {
+    "@eslint/compat": "^1.2.4",
+    "@rollup/plugin-commonjs": "^28.0.1",
+    "@rollup/plugin-json": "^6.1.0",
+    "@rollup/plugin-node-resolve": "^15.3.0",
+    "eslint-plugin-import": "^2.31.0",
+    "jiti": "^2.4.1",
+    "rollup-plugin-terser": "^7.0.2",
     "typescript": "*"
   },
   "peerDependencies": {
