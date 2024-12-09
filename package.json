@@ -4,7 +4,24 @@
   "description": "",
   "license": "ISC",
   "author": "monymony",
-  "main": "index.js",
+  "exports": {
+    ".": {
+      "require": "./shared.js", 
+      "import": "./shared.js" 
+    },
+    "./react": {
+      "require": "./react.js",
+      "import": "./react.js"
+    },
+    "./react-native": {
+      "require": "./react-native.js",
+      "import": "./react-native.js"
+    },
+    "./backend": {
+      "require": "./backend.js",
+      "import": "./backend.js"
+    }
+  },
   "packageManager": "yarn@1.22.22",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -12,7 +29,7 @@
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "^7.13.1",
     "@typescript-eslint/parser": "^7.13.1",
-    "eslint": "^9.5.0",
+    "eslint": "^9.16.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-import": "^2.29.1",
     "eslint-plugin-prettier": "^5.1.3",
