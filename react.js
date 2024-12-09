@@ -1,7 +1,7 @@
 module.exports = {
   extends: [
     // apply common rules
-    './index.js',
+    './shared.js',
     'plugin:react/recommended', // uses react-specific linting rules
     'plugin:react/jsx-runtime',
   ],
