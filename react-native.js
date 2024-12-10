@@ -12,6 +12,7 @@ export default [
     {
         plugins: {
             react,
+            // issue: https://github.com/Intellicode/eslint-plugin-react-native/issues/333#issuecomment-2150582430
             "react-native": fixupPluginRules(reactNative),
             "react-hooks": reactHooks,
         },
