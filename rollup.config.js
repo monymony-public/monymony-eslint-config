@@ -21,15 +21,16 @@ const configs = inputFiles.map(({ name, path }) => ({
       dir: `dist/${name}`,
       format: "esm",
       entryFileNames: `${name}.esm.js`, // ESM 파일 이름
-      // chunkFileNames: `${name}-chunk.js`,
+      chunkFileNames: `${name}-chunk.js`,
     },
     {
       dir: `dist/${name}`,
       format: "cjs",
-      entryFileNames: `${name}.cjs.js`, // ESM 파일 이름
-      // chunkFileNames: `${name}-chunk.js`,
+      entryFileNames: `${name}.cjs`,
+      chunkFileNames: `${name}-chunk.cjs`,
     }
   ],
+  external: ['eslint', 'typescript-eslint', 'eslint-plugin-import'],
   plugins: [
     nodeResolve(),
     commonjs(),
@@ -38,8 +39,8 @@ const configs = inputFiles.map(({ name, path }) => ({
       presets: ['@babel/preset-env'], // 최신 JS 변환
       exclude: 'node_modules/**',    // node_modules 제외
     }),
-    terser(),
-    json()
+    // terser(), // only for prod
+    json(),
   ],
 }));
 

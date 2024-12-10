@@ -10,22 +10,22 @@
   "exports": {
     ".": {
       "import": "./dist/common/common.esm.js",
-      "require": "./dist/common.cjs.js"
+      "require": "./dist/common.cjs"
     },
     "./common": {
-      "require": "./dist/common/common.cjs.js",
+      "require": "./dist/common/common.cjs",
       "import": "./dist/common/common.esm.js"
     },
     "./backend": {
-      "require": "./dist/backend/backend.cjs.js",
+      "require": "./dist/backend/backend.cjs",
       "import": "./dist/backend/backend.esm.js"
     },
     "./react": {
-      "require": "./dist/react/react.cjs.js",
+      "require": "./dist/react/react.cjs",
       "import": "./dist/react/react.esm.js"
     },
     "./react-native": {
-      "require": "./dist/react-native/react-native.cjs.js",
+      "require": "./dist/react-native/react-native.cjs",
       "import": "./dist/react-native/react-native.esm.js"
     }
   },
@@ -35,17 +35,16 @@
     "build": "rollup -c rollup.config.js"
   },
   "dependencies": {
-    "@typescript-eslint/eslint-plugin": "^7.13.1",
-    "@typescript-eslint/parser": "^7.13.1",
     "eslint": "^9.16.0",
     "eslint-config-prettier": "^9.1.0",
-    "eslint-plugin-prettier": "^5.1.3",
-    "eslint-plugin-react": "^7.34.3",
-    "eslint-plugin-react-hooks": "^4.6.2",
+    "eslint-plugin-prettier": "^5.2.1",
+    "eslint-plugin-react": "^7.37.2",
+    "eslint-plugin-react-hooks": "^5.1.0",
     "eslint-plugin-react-native": "^4.1.0",
-    "eslint-plugin-unused-imports": "^4.0.0",
+    "eslint-plugin-unused-imports": "^4.1.4",
     "prettier": "^3.3.2",
-    "rollup": "^4.28.1"
+    "rollup": "^4.28.1",
+    "typescript-eslint": "^8.18.0"
   },
   "devDependencies": {
     "@babel/core": "^7.26.0",
@@ -55,6 +54,7 @@
     "@rollup/plugin-commonjs": "^28.0.1",
     "@rollup/plugin-json": "^6.1.0",
     "@rollup/plugin-node-resolve": "^15.3.0",
+    "eslint-import-resolver-typescript": "^3.7.0",
     "eslint-plugin-import": "^2.31.0",
     "jiti": "^2.4.1",
     "rollup-plugin-terser": "^7.0.2",

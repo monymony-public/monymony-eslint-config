@@ -2,33 +2,18 @@ import react from "eslint-plugin-react";
 import reactNative from "eslint-plugin-react-native";
 import reactHooks from "eslint-plugin-react-hooks";
 import { fixupPluginRules } from "@eslint/compat";
-import path from "node:path";
-import { fileURLToPath } from "node:url";
-import js from "@eslint/js";
-import { FlatCompat } from "@eslint/eslintrc";
 import shared from './common';
 
-// To Support ESM module and CommonJS module
-const __filename = typeof __filename !== "undefined"
-  ? __filename
-  : fileURLToPath(import.meta.url);
-
-const __dirname = path.dirname(__filename);
-
-const compat = new FlatCompat({
-    baseDirectory: __dirname,
-    recommendedConfig: js.configs.recommended,
-    allConfig: js.configs.all
-});
 
 export default [
-    ...compat.extends("plugin:react/recommended", "plugin:react/jsx-runtime"),
     ...shared,
+    react.configs.flat.recommended,
+    react.configs.flat['jsx-runtime'],
     {
         plugins: {
             react,
-            "react-native": reactNative,
-            "react-hooks": fixupPluginRules(reactHooks),
+            "react-native": fixupPluginRules(reactNative),
+            "react-hooks": reactHooks,
         },
         languageOptions: {
             globals: {
@@ -37,11 +22,11 @@ export default [
             ecmaVersion: 2020,
             sourceType: "module",
         },
-        settings: {
-            react: {
-                version: "detect",
-            },
-        },
+        // settings: {
+        //     react: {
+        //         version: "detect",
+        //     },
+        // },
         rules: {
             "@typescript-eslint/explicit-function-return-type": ["warn", {
                 allowExpressions: true,
