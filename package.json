@@ -5,9 +5,13 @@
   "license": "ISC",
   "author": "monymony",
   "type": "module",
-  "main": "./dist/common.cjs.js",
-  "module": "./dist/common.esm.js",
+  "main": "./dist/common/common.cjs.js",
+  "module": "./dist/common/common.esm.js",
   "exports": {
+    ".": {
+      "import": "./dist/common/common.esm.js",
+      "require": "./dist/common.cjs.js"
+    },
     "./common": {
       "require": "./dist/common/common.cjs.js",
       "import": "./dist/common/common.esm.js"
@@ -44,7 +48,10 @@
     "rollup": "^4.28.1"
   },
   "devDependencies": {
+    "@babel/core": "^7.26.0",
+    "@babel/preset-env": "^7.26.0",
     "@eslint/compat": "^1.2.4",
+    "@rollup/plugin-babel": "^6.0.4",
     "@rollup/plugin-commonjs": "^28.0.1",
     "@rollup/plugin-json": "^6.1.0",
     "@rollup/plugin-node-resolve": "^15.3.0",

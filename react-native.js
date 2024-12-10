@@ -6,6 +6,7 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 import js from "@eslint/js";
 import { FlatCompat } from "@eslint/eslintrc";
+import shared from './common';
 
 // To Support ESM module and CommonJS module
 const __filename = typeof __filename !== "undefined"
@@ -21,7 +22,8 @@ const compat = new FlatCompat({
 });
 
 export default [
-    ...compat.extends("./common.js", "plugin:react/recommended", "plugin:react/jsx-runtime"),
+    ...compat.extends("plugin:react/recommended", "plugin:react/jsx-runtime"),
+    ...shared,
     {
         plugins: {
             react,

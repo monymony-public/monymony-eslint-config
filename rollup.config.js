@@ -3,6 +3,7 @@ import { nodeResolve } from "@rollup/plugin-node-resolve";
 import commonjs from "@rollup/plugin-commonjs";
 import { terser } from "rollup-plugin-terser";
 import json from "@rollup/plugin-json";
+import babel from '@rollup/plugin-babel';
 
 // 입력 파일 정의
 const inputFiles = [
@@ -20,18 +21,23 @@ const configs = inputFiles.map(({ name, path }) => ({
       dir: `dist/${name}`,
       format: "esm",
       entryFileNames: `${name}.esm.js`, // ESM 파일 이름
-      chunkFileNames: `${name}-chunk.js`,
+      // chunkFileNames: `${name}-chunk.js`,
     },
     {
       dir: `dist/${name}`,
       format: "cjs",
       entryFileNames: `${name}.cjs.js`, // ESM 파일 이름
-      chunkFileNames: `${name}-chunk.js`,
+      // chunkFileNames: `${name}-chunk.js`,
     }
   ],
   plugins: [
     nodeResolve(),
     commonjs(),
+    babel({
+      babelHelpers: 'bundled',
+      presets: ['@babel/preset-env'], // 최신 JS 변환
+      exclude: 'node_modules/**',    // node_modules 제외
+    }),
     terser(),
     json()
   ],

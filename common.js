@@ -7,6 +7,7 @@ import { FlatCompat } from "@eslint/eslintrc";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 
+
 // To Support ESM module and CommonJS module
 const __filename = typeof __filename !== "undefined"
   ? __filename
