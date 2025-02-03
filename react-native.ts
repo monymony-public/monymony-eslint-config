@@ -7,14 +7,12 @@ import shared from './common';
 
 export default [
     ...shared,
-    react.configs.flat.recommended,
-    react.configs.flat['jsx-runtime'],
     {
         plugins: {
-            react,
             // issue: https://github.com/Intellicode/eslint-plugin-react-native/issues/333#issuecomment-2150582430
             "react-native": fixupPluginRules(reactNative),
             "react-hooks": reactHooks,
+            "react": react
         },
         languageOptions: {
             globals: {
@@ -23,11 +21,6 @@ export default [
             ecmaVersion: 2020,
             sourceType: "module",
         },
-        // settings: {
-        //     react: {
-        //         version: "detect",
-        //     },
-        // },
         rules: {
             "@typescript-eslint/explicit-function-return-type": ["warn", {
                 allowExpressions: true,

@@ -5,6 +5,11 @@ import unusedImports from "eslint-plugin-unused-imports";
 import importPlugin from 'eslint-plugin-import';
 
 export default tsEslint.config(
+      {
+        ignores: [
+            "./node_modules/**"
+        ]
+      },
       eslint.configs.recommended,
       ...tsEslint.configs.recommended,
       importPlugin.flatConfigs.recommended,

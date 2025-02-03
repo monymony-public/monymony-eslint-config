@@ -7,26 +7,32 @@
   "type": "module",
   "main": "./dist/common/common.cjs.js",
   "module": "./dist/common/common.esm.js",
+  "types": "./dist/types/types.d.ts",
   "exports": {
     ".": {
       "import": "./dist/common/common.esm.js",
-      "require": "./dist/common.cjs"
+      "require": "./dist/common.cjs",
+      "types": "./dist/types/common.d.ts"
     },
     "./common": {
       "require": "./dist/common/common.cjs",
-      "import": "./dist/common/common.esm.js"
+      "import": "./dist/common/common.esm.js",
+      "types": "./dist/types/common.d.ts"
     },
     "./backend": {
       "require": "./dist/backend/backend.cjs",
-      "import": "./dist/backend/backend.esm.js"
+      "import": "./dist/backend/backend.esm.js",
+      "types": "./dist/types/backend.d.ts"
     },
     "./react": {
       "require": "./dist/react/react.cjs",
-      "import": "./dist/react/react.esm.js"
+      "import": "./dist/react/react.esm.js",
+      "types": "./dist/types/react.d.ts"
     },
     "./react-native": {
       "require": "./dist/react-native/react-native.cjs",
-      "import": "./dist/react-native/react-native.esm.js"
+      "import": "./dist/react-native/react-native.esm.js",
+      "types": "./dist/types/react-native.d.ts"
     }
   },
   "packageManager": "yarn@1.22.22",
@@ -54,13 +60,22 @@
     "@rollup/plugin-commonjs": "^28.0.1",
     "@rollup/plugin-json": "^6.1.0",
     "@rollup/plugin-node-resolve": "^15.3.0",
+    "@rollup/plugin-typescript": "^12.1.2",
     "eslint-import-resolver-typescript": "^3.7.0",
     "eslint-plugin-import": "^2.31.0",
     "jiti": "^2.4.1",
+    "rollup-plugin-dts": "^6.1.1",
     "rollup-plugin-terser": "^7.0.2",
     "typescript": "*"
   },
   "peerDependencies": {
-    "typescript": ">= 5.4.0"
-  }
+    "typescript": ">= 5.4.0",
+    "eslint-plugin-import": "2.31.0",
+    "typescript-eslint": "8.18.0",
+    "eslint-import-resolver-typescript": "*"
+  },
+  "files": [
+    "dist",
+    "dist/types"
+  ]
 }
