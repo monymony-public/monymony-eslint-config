@@ -1,5 +1,17 @@
 # Changelog
 
+## [0.5.6](https://github.com/monymony-public/monymony-eslint-config/compare/v0.5.5...v0.5.6) (2025-04-24)
+
+
+### Builds
+
+* support eslint version 9 (flatten config) and setup rollup bundler ([#30](https://github.com/monymony-public/monymony-eslint-config/issues/30)) ([a417191](https://github.com/monymony-public/monymony-eslint-config/commit/a417191f79f2777fb47dff23d639d3efef587489))
+
+
+### Docs
+
+* update README ([a538942](https://github.com/monymony-public/monymony-eslint-config/commit/a538942d81ec5c47d9a66daed266e6549cab8bd3))
+
 ## [0.5.5](https://github.com/monymony-public/monymony-eslint-config/compare/v0.5.4...v0.5.5) (2024-06-22)
 
 
