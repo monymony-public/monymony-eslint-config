@@ -2,5 +2,15 @@
   "compilerOptions": {
     "noUnusedLocals": false,
     "noUnusedParameters": false,
-  }
+    "declaration": true,
+    "declarationDir": "./dist",
+    "emitDeclarationOnly": false,
+    "esModuleInterop": true,
+    "moduleResolution": "bundler",
+    "module": "esnext",
+    "target": "es2020",
+    "resolveJsonModule": true
+  },
+  "include": ["./*.ts"],
+  "exclude": ["node_modules", "dist"]
 }
