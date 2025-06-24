@@ -20,37 +20,46 @@ jobs:
     outputs:
       released: ${{ steps.release.outputs.release_created }}
     steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.RELEASE_PLEASE_TOKEN }}
+
       - id: release
         uses: googleapis/release-please-action@v4
         with:
-          # this assumes that you have created a personal access token
-          # (PAT) and configured it as a GitHub action secret named
-          # `MY_RELEASE_PLEASE_TOKEN` (this secret name is not important).
           token: ${{ secrets.RELEASE_PLEASE_TOKEN }}
           config-file: release-please-config.json
           manifest-file: .release-please-manifest.json
 
-      - name: release created
-        run: echo "release created:" ${{ steps.release.outputs.release_created }}
+      - name: Debug release output
+        run: |
+          echo "Release created: ${{ steps.release.outputs.release_created }}"
+          echo "Release type: ${{ steps.release.outputs.release_type }}"
+          echo "Tag name: ${{ steps.release.outputs.tag_name }}"
 
-        # The logic below handles the npm publication:
+      # The logic below handles the npm publication:
       - name: Set up Node.js
-        if: ${{ steps.release.outputs.release_created }}
-        uses: actions/checkout@v4
-        # these if statements ensure that a publication only occurs when
-        # a new release is created:
-      - name: Create .npmrc
-        if: ${{ steps.release.outputs.release_created }}
+        if: steps.release.outputs.release_created == 'true'
         uses: actions/setup-node@v4
         with:
           node-version: 20
           registry-url: 'https://registry.npmjs.org'
-      - if: ${{ steps.release.outputs.release_created }}
+
+      - name: Create .npmrc
+        if: steps.release.outputs.release_created == 'true'
         run: mv .npmrc.forgithubaction .npmrc
-      - if: ${{ steps.release.outputs.release_created }}
-        run: yarn                    
+
+      - name: Install dependencies
+        if: steps.release.outputs.release_created == 'true'
+        run: yarn install --frozen-lockfile
+
+      - name: Build package
+        if: steps.release.outputs.release_created == 'true'
+        run: yarn build
+
       - name: Publish to npm
-        if: ${{ steps.release.outputs.release_created }}
+        if: steps.release.outputs.release_created == 'true'
         run: yarn publish --access public
         env:
-          NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
