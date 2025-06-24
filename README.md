@@ -1,4 +1,67 @@
-Do not use it. Not finished yet. 
+# Monymony ESLint Config
+
+ESLint configuration for Monymony projects.
+
+## Features
+
+- Common ESLint configuration
+- Backend-specific configuration
+- React-specific configuration
+- React Native-specific configuration
+- TypeScript support
+- Prettier integration
+
+## Installation
+
+```bash
+npm install @monymony/eslint-config
+```
+
+## Usage
+
+### Common Configuration
+
+```javascript
+// .eslintrc.js
+module.exports = {
+  extends: ['@monymony/eslint-config/common']
+};
+```
+
+### Backend Configuration
+
+```javascript
+// .eslintrc.js
+module.exports = {
+  extends: ['@monymony/eslint-config/backend']
+};
+```
+
+### React Configuration
+
+```javascript
+// .eslintrc.js
+module.exports = {
+  extends: ['@monymony/eslint-config/react']
+};
+```
+
+### React Native Configuration
+
+```javascript
+// .eslintrc.js
+module.exports = {
+  extends: ['@monymony/eslint-config/react-native']
+};
+```
+
+## Version
+
+Current version: 0.5.6
+
+## License
+
+ISC
 
 # Install
 
