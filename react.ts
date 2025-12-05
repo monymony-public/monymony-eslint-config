@@ -19,9 +19,6 @@ export default [
         // },
     },
     {
-        plugins: {
-            'react-hooks': reactHooks,
-        },
         rules: {
             "react/prop-types": "off",
             "react/jsx-no-bind": "off",
@@ -33,7 +30,7 @@ export default [
                 component: true,
                 html: true,
             }],
-            ...reactHooks.configs.recommended.rules
+            ...reactHooks.configs.flat.recommended
         },
     },
 ];

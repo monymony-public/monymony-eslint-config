@@ -11,7 +11,6 @@ export default [
         plugins: {
             // issue: https://github.com/Intellicode/eslint-plugin-react-native/issues/333#issuecomment-2150582430
             "react-native": fixupPluginRules(reactNative),
-            "react-hooks": reactHooks,
             "react": react
         },
         languageOptions: {
@@ -21,6 +20,7 @@ export default [
             ecmaVersion: 2020,
             sourceType: "module",
         },
+        ...reactHooks.configs.flat.recommended,
         rules: {
             "@typescript-eslint/explicit-function-return-type": ["warn", {
                 allowExpressions: true,
