@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.6.1](https://github.com/monymony-public/monymony-eslint-config/compare/v0.6.0...v0.6.1) (2025-12-05)
+
+
+### Chore
+
+* bump eslint-plugin-react-hooks to 7.0.1 ([#35](https://github.com/monymony-public/monymony-eslint-config/issues/35)) ([6ffcb24](https://github.com/monymony-public/monymony-eslint-config/commit/6ffcb248423a37d7763c9dbbd4dda357fd091a2f))
+
 ## [0.6.0](https://github.com/monymony-public/monymony-eslint-config/compare/v0.5.6...v0.6.0) (2025-12-05)
 
 
