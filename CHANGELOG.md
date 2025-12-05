@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.6.2](https://github.com/monymony-public/monymony-eslint-config/compare/v0.6.1...v0.6.2) (2025-12-05)
+
+
+### Bug Fixes
+
+* wrong dependency version ([86ed361](https://github.com/monymony-public/monymony-eslint-config/commit/86ed361579ad0766b85b5ef1e0bb963081138c5c))
+
 ## [0.6.1](https://github.com/monymony-public/monymony-eslint-config/compare/v0.6.0...v0.6.1) (2025-12-05)
 
 

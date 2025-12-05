@@ -1,6 +1,6 @@
 {
   "name": "@monymony/eslint-config",
-  "version": "0.6.1",
+  "version": "0.6.2",
   "description": "ESLint configuration for Monymony projects with TypeScript, React, and React Native support",
   "license": "ISC",
   "author": "monymony",
