@@ -1,5 +1,27 @@
 # Changelog
 
+## [0.6.0](https://github.com/monymony-public/monymony-eslint-config/compare/v0.5.6...v0.6.0) (2025-12-05)
+
+
+### Features
+
+* improve package description for better npm discoverability ([74609b3](https://github.com/monymony-public/monymony-eslint-config/commit/74609b3bceedd57059d85d6287f8183d0b0e3cd5))
+
+
+### Bug Fixes
+
+* wrong script ([8d1eeb7](https://github.com/monymony-public/monymony-eslint-config/commit/8d1eeb78618b476bdbe857fb616b144179f2de28))
+
+
+### Chore
+
+* bump eslint-plugin-react-hooks vertion to 6.x ([#33](https://github.com/monymony-public/monymony-eslint-config/issues/33)) ([318bbbb](https://github.com/monymony-public/monymony-eslint-config/commit/318bbbb4fab9d6b7dcba630c096bc4dd3d662f6e))
+
+
+### Docs
+
+* update README with comprehensive usage guide ([8ef99c3](https://github.com/monymony-public/monymony-eslint-config/commit/8ef99c37c182d1ad601d47a612995b848de97326))
+
 ## [0.5.6](https://github.com/monymony-public/monymony-eslint-config/compare/v0.5.5...v0.5.6) (2025-04-24)
 
 
