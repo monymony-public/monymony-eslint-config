@@ -1,0 +1,58 @@
+name: CI
+
+on:
+  pull_request:
+    branches: [main, develop]
+  push:
+    branches: [main, develop]
+
+jobs:
+  ci:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'yarn'
+
+      - name: Install dependencies
+        run: yarn install --frozen-lockfile
+
+      - name: TypeScript type check
+        run: yarn tsc --noEmit
+
+      - name: Build package
+        run: yarn build
+
+      - name: Link local package for testing
+        run: |
+          yarn link
+          cd examples/example-react-ts
+          yarn link @monymony/eslint-config
+
+      - name: Test ESLint config in React example
+        working-directory: examples/example-react-ts
+        run: |
+          yarn install --frozen-lockfile
+          yarn lint --max-warnings=0
+
+      - name: Verify build outputs
+        run: |
+          ls -la dist/
+          test -f dist/common/common.esm.js
+          test -f dist/common/common.cjs
+          test -f dist/backend/backend.esm.js
+          test -f dist/backend/backend.cjs
+          test -f dist/react/react.esm.js
+          test -f dist/react/react.cjs
+          test -f dist/react-native/react-native.esm.js
+          test -f dist/react-native/react-native.cjs
+          test -f dist/types/common.d.ts
+          test -f dist/types/backend.d.ts
+          test -f dist/types/react.d.ts
+          test -f dist/types/react-native.d.ts
