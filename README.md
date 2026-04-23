@@ -10,6 +10,19 @@ ESLint configuration for Monymony projects.
 - React Native-specific configuration
 - TypeScript support
 - Prettier integration
+- Custom backend convention rules for Monymony GraphQL/Nest style
+
+## Backend Convention Rules
+
+The `@monymony/eslint-config/backend` export now includes custom Monymony rules:
+
+- `monymony/resolve-field-in-resolver-class` (`error`)
+  - Requires `@ResolveField()` to live in a `@Resolver()` class instead of inside `@ObjectType()` / payload classes.
+- `monymony/graphql-require-input-args-name` (`warn`)
+  - Prefers `@Args('input') input: XxxInput` for business args in `@Query()` / `@Mutation()` methods.
+  - Keeps common relay-ish legacy argument containers such as `ConnectionWhereArguments` allowed for gradual adoption.
+- `monymony/prefer-input-object-parameter` (`warn`)
+  - Prefers a single `input` object parameter for public methods in `*ServiceImpl`, `*UseCase`, `*Gateway`, and `*Repository` classes.
 
 ## Installation
 

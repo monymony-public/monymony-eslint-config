@@ -41,7 +41,7 @@ const jsConfigs = inputFiles.map(({ name, path }) => ({
       tsconfig: './tsconfig.json',
       declarationDir: `dist/${name}`,
       declaration: true,
-      include: [path],
+      include: ['*.ts'],
       outDir: `dist/${name}`,
     }),
     json(),
